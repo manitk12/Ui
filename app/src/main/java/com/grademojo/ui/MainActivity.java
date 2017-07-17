@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                notApplicable.setBackgroundResource(R.drawable.designbutton);
-                didNotTake.setBackgroundResource(R.drawable.designbutton);
+                notApplicable.setBackgroundResource(R.drawable.xml_bg_blue_r15);
+                didNotTake.setBackgroundResource(R.drawable.xml_bg_blue_r15);
 
-                tookExam.setBackgroundResource(R.drawable.design2);
+                tookExam.setBackgroundResource(R.drawable.xml_bg_grey_r15);
             }
         });
 
@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         notApplicable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tookExam.setBackgroundResource(R.drawable.designbutton);
-                didNotTake.setBackgroundResource(R.drawable.designbutton);
+                tookExam.setBackgroundResource(R.drawable.xml_bg_blue_r15);
+                didNotTake.setBackgroundResource(R.drawable.xml_bg_blue_r15);
 
-                notApplicable.setBackgroundResource(R.drawable.design2);
+                notApplicable.setBackgroundResource(R.drawable.xml_bg_grey_r15);
             }
         });
 
@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         didNotTake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                notApplicable.setBackgroundResource(R.drawable.designbutton);
-                tookExam.setBackgroundResource(R.drawable.designbutton);
+                notApplicable.setBackgroundResource(R.drawable.xml_bg_blue_r15);
+                tookExam.setBackgroundResource(R.drawable.xml_bg_blue_r15);
 
-                didNotTake.setBackgroundResource(R.drawable.design2);
+                didNotTake.setBackgroundResource(R.drawable.xml_bg_grey_r15);
             }
         });
     }
