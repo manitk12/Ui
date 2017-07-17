@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.grademojo.ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="50dp"
+            android:text="40"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#67bff1"
+            android:layout_margin="20dp"
+            android:gravity=""
+             />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="50dp"
+            android:text="Arpit"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#67bff1"
+            android:layout_margin="20dp"
+            android:gravity=""
+             />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="3"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:id="@+id/tookexam1"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Took Exam"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:background="@drawable/designbutton"
+             />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:id="@+id/notapp1"
+            android:gravity="center"
+            android:text="Not\nApplicable"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:background="@drawable/designbutton"
+             />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:id="@+id/didnottake1"
+            android:text="Did not \nTake Exam"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:background="@drawable/designbutton"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp"
+        android:weightSum="2"
+        android:gravity="center_vertical"
+                   >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.12"
+                android:layout_height="40dp"
+                android:gravity="center"
+
+                android:hint="Marks Obtained"
+                android:textColorHint="#b3e4ff"
+                 />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="40dp"
+                android:background="@drawable/ic"
+             />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
