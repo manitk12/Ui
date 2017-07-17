@@ -24,18 +24,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //tookExam.setBackground(getResources().getDrawable(R.drawable.whatever));
                 tookExam.setSelected(!tookExam.isSelected());
+                notApplicable.setClickable(true);
+                didNotTake.setClickable(true);
+                notApplicable.setBackgroundResource(R.drawable.designbutton);
+                didNotTake.setBackgroundResource(R.drawable.designbutton);
                     if (tookExam.isSelected()){
                     tookExam.setBackgroundResource(R.drawable.design2);
                     tookExam.setClickable(true);
+//                        notApplicable.setClickable(false);
+//                        didNotTake.setClickable(false);
 
                 }
 
                else {
-                    tookExam.setClickable(false);
-                    notApplicable.setClickable(true);
-                    didNotTake.setClickable(true);
-                    notApplicable.setBackgroundResource(R.drawable.designbutton);
-                    didNotTake.setBackgroundResource(R.drawable.designbutton);
+//                    tookExam.setClickable(false);
+//                    notApplicable.setClickable(true);
+//                    didNotTake.setClickable(true);
+//                    notApplicable.setBackgroundResource(R.drawable.designbutton);
+//                    didNotTake.setBackgroundResource(R.drawable.designbutton);
                 }
 
 
@@ -48,18 +54,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //tookExam.setBackground(getResources().getDrawable(R.drawable.whatever));
                 notApplicable.setSelected(!notApplicable.isSelected());
+                notApplicable.setClickable(false);
+                tookExam.setClickable(true);
+                tookExam.setBackgroundResource(R.drawable.designbutton);
+                didNotTake.setClickable(true);
+                didNotTake.setBackgroundResource(R.drawable.designbutton);
                 if (notApplicable.isSelected()){
                     notApplicable.setBackgroundResource(R.drawable.design2);
                     notApplicable.setClickable(true);
-                    tookExam.setClickable(false);
-                    didNotTake.setClickable(false);
+//                    tookExam.setClickable(false);
+//                    didNotTake.setClickable(false);
                 }
                 else {
-                    notApplicable.setClickable(false);
-                    tookExam.setClickable(true);
-                    tookExam.setBackgroundResource(R.drawable.designbutton);
-                    didNotTake.setClickable(true);
-                    didNotTake.setBackgroundResource(R.drawable.designbutton);
+//                    notApplicable.setClickable(false);
+//                    tookExam.setClickable(true);
+//                    tookExam.setBackgroundResource(R.drawable.designbutton);
+//                    didNotTake.setClickable(true);
+//                    didNotTake.setBackgroundResource(R.drawable.designbutton);
                 }
 
             }
@@ -71,18 +82,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //tookExam.setBackground(getResources().getDrawable(R.drawable.whatever));
                 didNotTake.setSelected(!didNotTake.isSelected());
+                didNotTake.setClickable(false);
+                tookExam.setClickable(true);
+                notApplicable.setClickable(true);
+                tookExam.setBackgroundResource(R.drawable.designbutton);
+                notApplicable.setBackgroundResource(R.drawable.designbutton);
                 if (didNotTake.isSelected()){
                     didNotTake.setBackgroundResource(R.drawable.design2);
                     didNotTake.setClickable(true);
-                    notApplicable.setClickable(false);
-                    tookExam.setClickable(false);
+//                    notApplicable.setClickable(false);
+//                    tookExam.setClickable(false);
                 }
                 else {
-                    didNotTake.setClickable(false);
-                    tookExam.setClickable(true);
-                    notApplicable.setClickable(true);
-                    tookExam.setBackgroundResource(R.drawable.designbutton);
-                    notApplicable.setBackgroundResource(R.drawable.designbutton);
+//                    didNotTake.setClickable(false);
+//                    tookExam.setClickable(true);
+//                    notApplicable.setClickable(true);
+//                    tookExam.setBackgroundResource(R.drawable.designbutton);
+//                    notApplicable.setBackgroundResource(R.drawable.designbutton);
                 }
 
             }

@@ -64,7 +64,7 @@
             android:textStyle="normal"
             android:textColor="#ffffff"
             android:textSize="14sp"
-            android:background="@drawable/designbutton"
+            android:background="@drawable/design2"
              />
 
         <TextView
