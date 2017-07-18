@@ -10,14 +10,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:orientation="horizontal"
-        android:weightSum="4"
+        android:weightSum="6"
         >
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_height="50dp"
             android:text="@string/number"
             android:textSize="27sp"
@@ -29,7 +29,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:layout_height="50dp"
             android:text="@string/arpit"
             android:textSize="27sp"
@@ -99,16 +99,61 @@
     </LinearLayout>
 
 
-    <EditText
-        android:layout_width="250dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:weightSum="5"
+        android:layout_margin="100dp"
+        android:orientation="horizontal"
+         >
 
-        android:layout_height="40dp"
-        android:layout_gravity="center"
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="40dp">
 
-        android:hint="@string/marks"
-        android:textColorHint="#b3e4ff"
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="10dp"
+                android:background="#00000000"
+                android:hint="@string/marks"
+                android:textColorHint="#b3e4ff"
+                 />
 
-        android:drawableEnd="@drawable/ic_proged_pencil_filled"
-         />
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/blue"
+                android:layout_gravity="top"
+                />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/blue"
+                android:layout_gravity="bottom"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:layout_gravity="start"
+                />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_proged_pencil_filled"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </LinearLayout>

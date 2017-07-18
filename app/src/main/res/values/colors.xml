@@ -11,5 +11,6 @@
     <color name="white">#ffffff</color>
     <color name="light_blue">#b3e4ff</color>
     <color name="yellow">#fec689</color>
+    <color name="transparent">#00000000</color>
 
 </resources>
