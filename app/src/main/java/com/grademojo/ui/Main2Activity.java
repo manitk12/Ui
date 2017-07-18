@@ -9,8 +9,10 @@ public class Main2Activity extends AppCompatActivity {
 
     private TextView buttonStart, buttonEnd, buttonTop, buttonBottom;
 
-    private View borderStart , borderEnd, borderTop , borderBottom;
-    private Boolean isTopBorderVisible,isStartBorderVisible,isEndBorderVisible,isBottomBorderVisible;
+    private View borderStart, borderEnd, borderTop, borderBottom;
+
+    private Boolean isTopBorderVisible, isStartBorderVisible,
+            isEndBorderVisible, isBottomBorderVisible;
 
 
 
@@ -28,10 +30,10 @@ public class Main2Activity extends AppCompatActivity {
         buttonTop = (TextView) findViewById(R.id.top);
         buttonBottom = (TextView) findViewById(R.id.bottom);
 
-        borderStart = (View) findViewById(R.id.start1);
-        borderEnd = (View) findViewById(R.id.end1);
-        borderTop = (View) findViewById(R.id.top1);
-        borderBottom = (View) findViewById(R.id.bottom1);
+        borderStart = findViewById(R.id.start1);
+        borderEnd = findViewById(R.id.end1);
+        borderTop = findViewById(R.id.top1);
+        borderBottom = findViewById(R.id.bottom1);
 
 
 
