@@ -2,12 +2,11 @@
     <string name="app_name">Ui</string>
 
 
-
     <string name="took_exam">Took Exam</string>
     <string name="not_applicable">Not Applicable</string>
     <string name="did_not_take_exam">Did Not Take Exam</string>
     <string name="arpit">Arpit</string>
-    <string name="number">40</string>
+    <string name="number">400000000999999999999990000000</string>
     <string name="marks">Marks Obtained</string>
 
 </resources>
