@@ -8,9 +8,9 @@ import android.widget.TextView;
 
 public class Main3Activity extends AppCompatActivity {
 
-    private TextView changeColor ,redColor ,blueColor ,greenColor ,greyColor;
+    private TextView mainTextView, redColor, blueColor, greenColor, greyColor;
 
-    View borderColorChange;
+    private View mainBorder;
 
 
     @Override
@@ -18,13 +18,13 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        changeColor = (TextView) findViewById(R.id.textcolor);
-        redColor = (TextView) findViewById(R.id.start);
-        blueColor = (TextView) findViewById(R.id.end);
-        greenColor = (TextView) findViewById(R.id.top);
-        greyColor = (TextView) findViewById(R.id.bottom);
+        mainTextView = (TextView) findViewById(R.id.main_text_view);
+        redColor = (TextView) findViewById(R.id.red);
+        blueColor = (TextView) findViewById(R.id.blue);
+        greenColor = (TextView) findViewById(R.id.green);
+        greyColor = (TextView) findViewById(R.id.grey);
 
-        borderColorChange = findViewById(R.id.top1);
+        mainBorder = findViewById(R.id.main_border);
 
 
 
@@ -33,8 +33,8 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeColor.setTextColor(Color.RED);
-                borderColorChange.setBackgroundColor(Color.RED);
+                mainTextView.setTextColor(Color.RED);
+                mainBorder.setBackgroundColor(Color.RED);
             }
         });
 
@@ -43,8 +43,8 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeColor.setTextColor(Color.BLUE);
-                borderColorChange.setBackgroundColor(Color.BLUE);
+                mainTextView.setTextColor(Color.BLUE);
+                mainBorder.setBackgroundColor(Color.BLUE);
             }
         });
 
@@ -53,8 +53,8 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeColor.setTextColor(Color.GREEN);
-                borderColorChange.setBackgroundColor(Color.GREEN);
+                mainTextView.setTextColor(Color.GREEN);
+                mainBorder.setBackgroundColor(Color.GREEN);
             }
         });
 
@@ -62,8 +62,8 @@ public class Main3Activity extends AppCompatActivity {
         greyColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeColor.setTextColor(Color.GRAY);
-                borderColorChange.setBackgroundColor(Color.GRAY);
+                mainTextView.setTextColor(Color.GRAY);
+                mainBorder.setBackgroundColor(Color.GRAY);
             }
         });
     }
